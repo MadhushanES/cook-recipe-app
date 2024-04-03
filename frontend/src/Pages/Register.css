@@ -1,0 +1,57 @@
+.container2{
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    width:1000px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 25px 25px;
+    background-color: white;
+    margin: 10%;
+    position: relative;
+}
+
+.Register-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.Register-heading{
+    font-size: xx-large;
+    margin-left: 5%;
+}
+
+.input-register-container{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    top: -12px;
+    left: 20px; 
+    background-color: white; 
+    padding: 0 5px; 
+}
+
+.input {
+  border: 2px solid #ff0000;
+  padding: 10px;
+  border-radius: 6px;
+  height: 35px;
+}
+
+.submit{
+    padding: 15px;
+    border-radius: 6px;
+    font-size: medium;
+    color: beige;
+    background-color: rgb(255, 0, 221);
+    border: none;
+}

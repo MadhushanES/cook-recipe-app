@@ -1,0 +1,43 @@
+.Login-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.Login-heading{
+    font-size: xx-large;
+}
+
+.input-login-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    top: -12px; 
+    left: 20px;
+    background-color: white; 
+    padding: 0 5px;
+}
+
+.input {
+  border: 2px solid #ff0000;
+  padding: 10px;
+  border-radius: 6px;
+  height: 35px;
+}
+
+.submit{
+    padding: 15px;
+    border-radius: 6px;
+    font-size: medium;
+    color: beige;
+    background-color: rgb(255, 0, 221);
+    border: none;
+}
