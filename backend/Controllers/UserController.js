@@ -95,16 +95,33 @@ router.post("/favor", authenticateToken, async (req, res) => {
   }
 })
 
+// Route to remove a favorite meal
+router.delete("/favor/:mealId", authenticateToken, async (req, res) => {
+  console.log("mesp")
+  try {
+      const userId = req.user.UserEmail
+      const mealId = req.params.mealId
+
+      const user = await signUpSchema.findOne({ UserEmail: userId })
+      console.log(userId)
+
+      user.favoriteMeals = user.favoriteMeals.filter(meal => meal.mealId !== mealId)
+      await user.save()
+
+      res.status(200).json({ message: "Favorite meal removed successfully!" })
+  } catch (err) {
+      res.status(500).json({ error: err.message || err })
+  }
+})
+
 
 // Route to get favorite meals
 router.get("/favorites", authenticateToken, async (req, res) => {
   try {
       const userId = req.user.UserEmail;
 
-      // Find the user by ID
       const user = await signUpSchema.findOne({UserEmail: userId});
 
-      // Return the favoriteMeals array
       res.status(200).json({ favoriteMeals: user.favoriteMeals });
   } catch (err) {
       res.status(500).json({ error: err.message || err });

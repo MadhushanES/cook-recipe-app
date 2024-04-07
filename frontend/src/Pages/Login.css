@@ -1,4 +1,4 @@
-.Login-container{
+.Login-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -8,18 +8,17 @@
     position: relative;
 }
 
-
-.cook{
+.cook {
     width: 100px;
     align-self: center;
     padding-top: 25%;
 }
 
-.Login-heading{
+.Login-heading {
     font-size: xx-large;
 }
 
-.input-login-container{
+.input-login-container {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -27,24 +26,28 @@
 
 .label {
     position: absolute;
-    top: -12px; 
+    top: -12px;
     left: 20px;
-    background-color: white; 
+    background-color: white;
     padding: 0 5px;
 }
 
-.input{
-  /* border: 2px solid #ff0000; */
-  padding: 10px;
-  border-radius: 6px;
-  height: 35px;
+.input {
+    padding: 10px;
+    border-radius: 6px;
+    height: 35px;
+    border: 2px solid black;
 }
 
-.input:active{
-    boarder:2px solid #fe5e7f;
+.input-error {
+    border-color: #fe5e7f;
 }
 
-.submit{
+.input:active {
+    border: 2px solid #fe5e7f;
+}
+
+.submit {
     padding: 15px;
     border-radius: 6px;
     font-size: medium;
@@ -53,27 +56,32 @@
     border: none;
 }
 
-.ul-acc{
+.error-message {
+    color: #ff0000;
+    font-size: small;
+    margin-top: 5px;
+}
+
+.ul-acc {
     display: flex;
     padding-top: 1.5%;
     align-items: center;
     gap: 10px;
     padding-right: 40px;
-    /* margin-right: 15px; */
 }
 
-.li-acc{
+.li-acc {
     list-style: none;
-    font-size:small;
+    font-size: small;
 }
 
-.li-acc1{
+.li-acc1 {
     list-style: none;
-    font-size:small;
+    font-size: small;
     color: #fe5e7f;
 }
 
-.li-acc1-a{
+.li-acc1-a {
     text-decoration: none;
     color: #fe5e7f;
 }
