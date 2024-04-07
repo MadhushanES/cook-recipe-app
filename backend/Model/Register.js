@@ -38,6 +38,13 @@ const UserSchema = new mongoose.Schema({
             message: 'Password must be at least 8 characters long, contain at least one uppercase letter, one number, and one special character (!@#$%^&*)'
         }
     },
+
+    favoriteMeals: [{
+        mealId: String,
+        mealName: String,
+        thumbnail: String
+    }],
+
     createdAt: {
         type: Date,
         default: Date.now

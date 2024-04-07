@@ -1,0 +1,44 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+}
+
+.cook-logo{
+    height: 30px;
+    width: auto;
+    padding: 25px;
+    padding-left: 11%;
+    padding-top: 2.5%;
+}
+
+.logout-logo{
+    height: 30px;
+    width: auto;
+    padding: 25px;
+    padding-right: 11%;
+    /* padding-top: 2%; */
+}
+
+.nav-ul{
+    display: flex;
+    padding-top: 1.5%;
+    margin-top: -16px;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.nav-ul-li{
+    list-style: none;
+    text-decoration: none;   
+}
+
+.nav-ul-li-a{
+    display: black;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    
+}

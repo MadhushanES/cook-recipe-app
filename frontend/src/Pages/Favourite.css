@@ -1,0 +1,27 @@
+.container-fav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .meal {
+    /* width: 20%; */
+    padding: 10px;
+    width: 1200px;
+    margin-left: 10%;
+  }
+  
+  .meal-tiles {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 30px;
+  }
+  
+  .meal-tile {
+    text-align: center;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  
