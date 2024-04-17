@@ -84,7 +84,7 @@ export default function Login() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/post/Login', { uemail, upass })
+            const response = await axios.post('http://54.82.221.159:5000/post/Login', { uemail, upass })
             localStorage.setItem('token', response.data.token)
             navigate('/Home')
         } catch (error) {
